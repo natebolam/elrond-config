@@ -1,0 +1,64 @@
+{
+  "initialBalances": [
+    {
+      "pubkey": "bfb623106b147e40e68ae96bb2eb28ef78be41ca2b246c1335a29900122c0215",
+      "balance": "1000000000"
+    },
+    {
+      "pubkey": "414db066e1ec831bfc983908fe5a5ef546f863397001e228e4c6dc8fdfdc1f38",
+      "balance": "1000000000"
+    },
+    {
+      "pubkey": "8f4be280a0f7871ecb50b1f37a2f47299441709ae41d2afe6f5abb5a5e33b066",
+      "balance": "1000000000"
+    },
+    {
+      "pubkey": "aacb369542fc3def5899402c2f6f4c2f5338d4bbe024f5bfa3ad7f5b4a8e3c64",
+      "balance": "1000000000"
+    },
+    {
+      "pubkey": "643da71cf895126000a2db35b8b58cf21b077d24146cf2c985c2fb1cd45565cb",
+      "balance": "1000000000"
+    },
+    {
+      "pubkey": "83381c83063acef29dba3ab47cae2d7b58f0562ac69264dbb7569f1ba88593f2",
+      "balance": "1000000000"
+    },
+    {
+      "pubkey": "af71e7a515da870ed6d81a6f078df5e343e5c5d70c5e1861ac35c676ba61ce8c",
+      "balance": "1000000000"
+    },
+    {
+      "pubkey": "eea2672ec364ad9a6697eab1aa2be9ee9f72c17c92a80ee6621f2d70c39675cf",
+      "balance": "1000000000"
+    },
+    {
+      "pubkey": "cec222f3cdb9ca97de9ba58fa7b5cf9ef7c50bfb267f17da0481f5a01c191bb9",
+      "balance": "1000000000"
+    },
+    {
+      "pubkey": "8cde64609869d430b3129a8ff09a5c5e5701da1297baedc5be01f8aac4caad34",
+      "balance": "1000000000"
+    },
+    {
+      "pubkey": "7dd658c76ca38062786f8498fffb87ac51de28236de358826cfc76e9e5808176",
+      "balance": "1000000000"
+    },
+    {
+      "pubkey": "d74e8d927dd2cf1a71c5acbc0cdaed971a0b05714116e0a5f022529d2e31a3c4",
+      "balance": "1000000000"
+    },
+    {
+      "pubkey": "ae5eeaa972966426639f2f4639fbb5f6c9a3d73cbbfbcc08bf27365f260b43d5",
+      "balance": "1000000000"
+    },
+    {
+      "pubkey": "553ddef445a8afc2bc414801ed68f962899a1f0996ea4e4781cd3195e28c8b18",
+      "balance": "1000000000"
+    },
+    {
+      "pubkey": "9dadd9cacf0475bd813b0414f3a71787dce13fdad5eefcbdea03a4dc544b31b9",
+      "balance": "1000000000"
+    }
+  ]
+}
