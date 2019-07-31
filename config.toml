@@ -4,13 +4,16 @@
    # value will be given as string. For example: "0", "1", "15", "metachain"
    DestinationShardAsObserver = "0"
 
+   # NetworkID will be used for network versions
+   NetworkID = "ElrondPublicTestNET-1011"
+
 [Explorer]
     Enabled = false
-    IndexerURL = "http://localhost"
+    IndexerURL = "http://localhost:9200"
 
 [MiniBlocksStorage]
     [MiniBlocksStorage.Cache]
-        Size = 10000
+        Size = 100
         Type = "LRU"
     [MiniBlocksStorage.DB]
         FilePath = "MiniBlocks"
@@ -20,17 +23,17 @@
 
 [PeerBlockBodyStorage]
     [PeerBlockBodyStorage.Cache]
-        Size = 10000
+        Size = 1000
         Type = "LRU"
     [PeerBlockBodyStorage.DB]
         FilePath = "PeerBlocks"
         Type = "LvlDBSerial"
         BatchDelaySeconds = 30
-        MaxBatchSize = 10
+        MaxBatchSize = 6
 
 [BlockHeaderStorage]
     [BlockHeaderStorage.Cache]
-        Size = 10000
+        Size = 1000
         Type = "LRU"
     [BlockHeaderStorage.DB]
         FilePath = "BlockHeaders"
@@ -40,27 +43,27 @@
 
 [ShardDataStorage]
     [ShardDataStorage.Cache]
-        Size = 10000
+        Size = 1000
         Type = "LRU"
     [ShardDataStorage.DB]
         FilePath = "ShardData"
         Type = "LvlDBSerial"
         BatchDelaySeconds = 30
-        MaxBatchSize = 10
+        MaxBatchSize = 30
 
 [PeerDataStorage]
     [PeerDataStorage.Cache]
-        Size = 10000
+        Size = 1000
         Type = "LRU"
     [PeerDataStorage.DB]
         FilePath = "PeerData"
         Type = "LvlDBSerial"
         BatchDelaySeconds = 30
-        MaxBatchSize = 10
+        MaxBatchSize = 30
 
 [MetaBlockStorage]
     [MetaBlockStorage.Cache]
-        Size = 10000
+        Size = 1000
         Type = "LRU"
     [MetaBlockStorage.DB]
         FilePath = "MetaBlock"
@@ -70,42 +73,42 @@
 
 [TxStorage]
     [TxStorage.Cache]
-        Size = 100000
+        Size = 250000
         Type = "LRU"
     [TxStorage.DB]
         FilePath = "Transactions"
         Type = "LvlDBSerial"
         BatchDelaySeconds = 15
-        MaxBatchSize = 30000
+        MaxBatchSize = 45000
 
-[SmartContractResultStorage]
-    [SmartContractResultStorage.Cache]
+[UnsignedTransactionStorage]
+    [UnsignedTransactionStorage.Cache]
         Size = 100000
         Type = "LRU"
-    [SmartContractResultStorage.DB]
-        FilePath = "SmartContractResult"
+    [UnsignedTransactionStorage.DB]
+        FilePath = "UnsignedTransactions"
         Type = "LvlDBSerial"
         BatchDelaySeconds = 15
-        MaxBatchSize = 30000
+        MaxBatchSize = 45000
 
 [ShardHdrNonceHashStorage]
     [ShardHdrNonceHashStorage.Cache]
-        Size = 10000
+        Size = 1000
         Type = "LRU"
     [ShardHdrNonceHashStorage.DB]
         FilePath = "ShardHdrHashNonce"
         Type = "LvlDBSerial"
-        BatchDelaySeconds = 10
+        BatchDelaySeconds = 30
         MaxBatchSize = 1
 
 [MetaHdrNonceHashStorage]
     [MetaHdrNonceHashStorage.Cache]
-        Size = 10000
+        Size = 1000
         Type = "LRU"
     [MetaHdrNonceHashStorage.DB]
         FilePath = "MetaHdrHashNonce"
         Type = "LvlDBSerial"
-        BatchDelaySeconds = 10
+        BatchDelaySeconds = 30
         MaxBatchSize = 1
 
 [AccountsTrieStorage]
@@ -115,56 +118,56 @@
     [AccountsTrieStorage.DB]
         FilePath = "AccountsTrie"
         Type = "LvlDBSerial"
-        BatchDelaySeconds = 10
-        MaxBatchSize = 1
+        BatchDelaySeconds = 15
+        MaxBatchSize = 45000
 
 [BadBlocksCache]
-    Size = 10000
+    Size = 1000
     Type = "LRU"
 
 [TxBlockBodyDataPool]
-    Size = 10000
+    Size = 100
     Type = "LRU"
 
 [StateBlockBodyDataPool]
-    Size = 10000
+    Size = 1000
     Type = "LRU"
 
 [PeerBlockBodyDataPool]
-    Size = 10000
+    Size = 1000
     Type = "LRU"
 
 [BlockHeaderDataPool]
-    Size = 10000
+    Size = 1000
     Type = "LRU"
 
 [BlockHeaderNoncesDataPool]
-    Size = 10000
+    Size = 1000
     Type = "LRU"
 
 [MetaHeaderNoncesDataPool]
-    Size = 10000
+    Size = 1000
     Type = "LRU"
 
 [TxDataPool]
-    Size = 100000
+    Size = 250000
     Type = "FIFOSharded"
-    Shards = 32
+    Shards = 16
 
-[SmartContractDataPool]
+[UnsignedTransactionDataPool]
     Size = 100000
     Type = "LRU"
 
 [ShardHeadersDataPool]
-    Size = 10000
+    Size = 1000
     Type = "LRU"
 
 [MiniBlockHeaderHashesDataPool]
-    Size = 10000
+    Size = 1000
     Type = "LRU"
 
 [MetaBlockBodyDataPool]
-    Size = 10000
+    Size = 1000
     Type = "LRU"
 
 [Logger]
