@@ -1,7 +1,7 @@
 [ElasticSearch]
-    Username = "basic_auth_username"
-    Password = "basic_auth_password"
+    Username = ""
+    Password = ""
 [Prometheus]
-    PrometheusBaseURL = "https://join-testnet.elrond.com"
+    PrometheusBaseURL = "http://18.197.128.66:2113"
     JoinRoute = "/join"
     StatusRoute = "/status"
