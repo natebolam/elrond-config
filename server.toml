@@ -2,6 +2,6 @@
     Username = "basic_auth_username"
     Password = "basic_auth_password"
 [Prometheus]
-    PrometheusBaseURL = "https://join-testnet.elrond.com"
+    PrometheusBaseURL = ""
     JoinRoute = "/join"
     StatusRoute = "/status"
