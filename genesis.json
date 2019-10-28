@@ -1,16 +1,100 @@
-{ 
-   "initialBalances":[ 
+{
+  "initialBalances": [
     {
-      "pubkey": "c2981474860ebd42f9da812a41dcace8a0c2fdac52e3a66a45603821ca4c6d43",
-      "balance": "10000000000000000000000000000"
+      "pubkey": "6c3007e1dce6ffda1ee40e0f0ef7933c059ed2a9ce10d55b1407e013df0f0945",
+      "balance": "100000000000000000"
     },
     {
-      "pubkey": "27c5b5e16781587af8796bf246242766a593d189a566888c67f8f8a6ab44d45f",
-      "balance": "10000000000000000000000000000"
+      "pubkey": "7daa962a17bc1083dd19302c4a28c3a6ef6c4f6eb1a8c97cadc82948217ec2d1",
+      "balance": "100000000000000000"
     },
     {
-      "pubkey": "c3615339baf6c19b7b9723b706b83dda35d7b173c4f7d3fe22f4dbeafd887493",
-      "balance": "10000000000000000000000000000"
+      "pubkey": "b51e1d9b75ec06b216b351612309d6d32a8a788bb25ede2bd06fcc20efcdbde9",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "b2ffe5980330667dcbf81b88606d5713c95631dfcefd993d2582f5235922178e",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "8558d1bfd086d71d694e43dde0a2e5ee951059a7efdf7fc96ec273cfc6d2fe4d",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "effb86e63312105e6c09621f802087d05283a64fa936e9c3deb9cfb0f0e99476",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "c056353a61503d2ea2f67967f344889a69914022d8500344a34db2e0a0abaf2e",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "0c3a3e9f4cc06174569c4de6c3a209e32e2a3dbeb7465f4b6e7f15197574faef",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "711d95d620651e8c67ff21a46b1bd2e83b71aa14fd1aa7fb81a0ad2db2ecfef0",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "af4ec47241e3ea5fe626301782effefb22d1e23b99bcffedeceb323cf822d7a3",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "28de35839f341fee369fc7bdcd86ec3fe4875d09882f5168675396cbc281c7b4",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "b8c9eca02acc9192c85460c67cb79fca282608e382c12760961a630eea8e7028",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "ef34463cd7b88bd94112b9953d1b5290b07ee73c8502947070f7dc503e5a653d",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "6919e3ef07672f3f05ed8bfd222ae5ef33454e8f9d99286e11cec00cb7c95a0e",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "32e5d8a8f6c0cfb6ecfd885e461d069124c56b2ff15d31f66c8fddb2064f3889",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "e2d577dfef2385d6ba272fe86ad10bcae4f5e302cc4f7d4004573404f484684a",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "f3b3128d2bcfeee1394f19533bf5a869c6e9b611f51832ebec5742997f7a752f",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "1035b5c696dc772177ec682ba7c22b15596da34ff3301ca9491914b5f25d3d15",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "a9029503b688443d7b55071906cabc3ed845b61156a1f56d7c8c8acc6f0aa32c",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "23230c32d5a64575589d111c9d02e53b4d1111a5ad193f84e6cdba20798a321c",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "16a2801b38a426f14b71057344fa6d05ea70413761ba24b575d909508a4bd8d0",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "c92b7495959358417be6862d6f1d5e6c1b642df868c1f2159becea04d1b61f96",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "b3628f096852db4c4b16cfc2e75e60f440a787e8f1130727a0db71b80d288792",
+      "balance": "100000000000000000"
+    },
+    {
+      "pubkey": "b63cd0687adca10686e0873497a77cae42f6e52317c54cf4904d94b5e15d7cdd",
+      "balance": "100000000000000000"
     }
-   ]
+  ]
 }
