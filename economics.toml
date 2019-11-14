@@ -15,5 +15,5 @@
     MinGasLimit = "100"
 
 [ValidatorSettings]
-    StakeValue = "500000000000000000000000"
+    StakeValue = "20000000"
     UnBoundPeriod = "100000"
