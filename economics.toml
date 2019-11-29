@@ -4,16 +4,17 @@
     BurnAddress = "deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef"
 
 [RewardsSettings]
-    RewardsValue = "2000"
+    RewardsValue = "20000"
     CommunityPercentage = 0.10
     LeaderPercentage = 0.50
     BurnPercentage = 0.40
     DenominationCoefficientForView = "0.0001"
 
 [FeeSettings]
-    MinGasPrice = "10"
-    MinGasLimit = "100"
+    MaxGasLimitPerBlock = "1500000000"
+    MinGasPrice = "1"
+    MinGasLimit = "100000"
 
 [ValidatorSettings]
-    StakeValue = "20000000"
-    UnBoundPeriod = "100000"
+    StakeValue = "5000000000"
+    UnBoundPeriod = "100"

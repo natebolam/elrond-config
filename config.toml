@@ -5,7 +5,7 @@
    DestinationShardAsObserver = "0"
 
    # NetworkID will be used for network versions
-   NetworkID = "BoN-ph2-w1"
+   NetworkID = "BoN-ph2-w2"
 
    # StatusPollingIntervalSec represents the no of seconds between multiple polling for the status for AppStatusHandler
    StatusPollingIntervalSec = 2
@@ -56,6 +56,17 @@
         Type = "LvlDBSerial"
         BatchDelaySeconds = 30
         MaxBatchSize = 30
+        MaxOpenFiles = 10
+
+[BootstrapStorage]
+    [BootstrapStorage.Cache]
+        Size = 1000
+        Type = "LRU"
+    [BootstrapStorage.DB]
+        FilePath = "BootstrapData"
+        Type = "LvlDBSerial"
+        BatchDelaySeconds = 30
+        MaxBatchSize = 1
         MaxOpenFiles = 10
 
 [PeerDataStorage]
@@ -142,7 +153,7 @@
     [AccountsTrieStorage.DB]
         FilePath = "AccountsTrie"
         Type = "LvlDBSerial"
-        BatchDelaySeconds = 15
+        BatchDelaySeconds = 5
         MaxBatchSize = 45000
         MaxOpenFiles = 10
 
@@ -153,7 +164,7 @@
     [PeerAccountsTrieStorage.DB]
         FilePath = "PeerAccountsTrie"
         Type = "LvlDBSerial"
-        BatchDelaySeconds = 15
+        BatchDelaySeconds = 5
         MaxBatchSize = 45000
         MaxOpenFiles = 10
 
@@ -238,9 +249,9 @@
 # where x in [MinTimeToWaitBetweenBroadcastsInSec, MaxTimeToWaitBetweenBroadcastsInSec)
 [Heartbeat]
    Enabled = true
-   MinTimeToWaitBetweenBroadcastsInSec = 50
-   MaxTimeToWaitBetweenBroadcastsInSec = 70
-   DurationInSecToConsiderUnresponsive = 300
+   MinTimeToWaitBetweenBroadcastsInSec = 20
+   MaxTimeToWaitBetweenBroadcastsInSec = 25
+   DurationInSecToConsiderUnresponsive = 60
    [Heartbeat.HeartbeatStorage]
        [Heartbeat.HeartbeatStorage.Cache]
            Size = 100
@@ -262,5 +273,3 @@
    Port = 123
    TimeoutMilliseconds = 100
    Version = 0  # Setting 0 means 'use default value'
-
-
