@@ -1,11 +1,11 @@
 {
-   "startTime":1576688400,
+   "startTime":1576958400,
    "roundDuration":6000,
    "consensusGroupSize":63,
    "minNodesPerShard":157,
    "metaChainConsensusGroupSize":157,
    "metaChainMinNodes":157,
-   "chainID": "BoN-phShadowShards-w3",
+   "chainID": "BoN-phShadowShards-w4",
    "initialNodes":[
       {
          "pubkey":"29c8cb923ed3f881f130f8f61f90fc6957dd311cee4f0bbdd23ed85c50c439286b7141447d185628a1e2441d80ea89166bf0fbb7a66aeee5c55d95127976ad8c621ab912d2a4446c23cad44c8f5186926565ac6eb5a5fc2435a847be96257555008c090396e2238614e0bf175d667c6852539d408461c8282352f48c74eddcb3",
