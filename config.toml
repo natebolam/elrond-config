@@ -5,7 +5,7 @@
    DestinationShardAsObserver = "0"
 
    # NetworkID will be used for network versions
-   NetworkID = "BoNwards-w02"
+   NetworkID = "BoNwards-w03"
 
    # StatusPollingIntervalSec represents the no of seconds between multiple polling for the status for AppStatusHandler
    StatusPollingIntervalSec = 2
@@ -264,6 +264,11 @@
     [Antiflood.Cache]
         Size = 5000
         Type = "LRU"
+    [Antiflood.BlackList]
+        ThresholdNumMessagesPerSecond = 150
+        ThresholdSizePerSecond = 4194304
+        NumFloodingRounds = 10
+        PeerBanDurationInSeconds = 300
 
 [Logger]
     Path = "logs"
