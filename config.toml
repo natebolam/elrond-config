@@ -5,7 +5,7 @@
    DestinationShardAsObserver = "0"
 
    # NetworkID will be used for network versions
-   NetworkID = "BoNwards-w05"
+   NetworkID = "BoNwards-w06"
 
    # StatusPollingIntervalSec represents the no of seconds between multiple polling for the status for AppStatusHandler
    StatusPollingIntervalSec = 2
@@ -256,19 +256,17 @@
     Size = 1000
     Type = "LRU"
 
-[Antiflood]
-    PeerMaxMessagesPerSecond = 75
-    PeerMaxTotalSizePerSecond = 2097152
-    MaxMessagesPerSecond = 400
-    MaxTotalSizePerSecond = 4194304
-    [Antiflood.Cache]
-        Size = 5000
-        Type = "LRU"
-    [Antiflood.BlackList]
-        ThresholdNumMessagesPerSecond = 150
-        ThresholdSizePerSecond = 4194304
-        NumFloodingRounds = 10
-        PeerBanDurationInSeconds = 300
+[PublicKeyShardId]
+    Size = 30000
+    Type = "LRU"
+
+[PublicKeyPeerId]
+    Size = 30000
+    Type = "LRU"
+
+[PeerIdShardId]
+    Size = 30000
+    Type = "LRU"
 
 [Logger]
     Path = "logs"

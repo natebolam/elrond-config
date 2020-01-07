@@ -18,7 +18,7 @@
     Seed = ""
 
     # The targeted number of peer connections
-    TargetPeerCount = 100
+    TargetPeerCount = 30
 
 # P2P peer discovery section
 
@@ -47,4 +47,8 @@
     #
     #If the initial peers list is left empty, the node will not try to connect to other peers during initial bootstrap
     #phase but will accept connections and will do the network discovery if another peer connects to it
-    InitialPeerList = ["/ip4/18.189.140.150/tcp/10000/p2p/16Uiu2HAmQPj5xwgMN6eFjtk57qePAn7LJkYDTqDSoRmz8rSGvQxb"]
+    InitialPeerList = ["/ip4/18.189.140.150/tcp/10000/p2p/16Uiu2HAmSsPUZTmHZepKtuTW1HZiw7L2r5DmLhLCBE4ZPFR5FGxU"]
+
+[Sharding]
+    # Number of ptiority bits used
+    PrioBits = 4
