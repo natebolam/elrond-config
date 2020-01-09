@@ -5,7 +5,7 @@
    DestinationShardAsObserver = "0"
 
    # NetworkID will be used for network versions
-   NetworkID = "BoNwards-w08"
+   NetworkID = "BoNwards-w09"
 
    # StatusPollingIntervalSec represents the no of seconds between multiple polling for the status for AppStatusHandler
    StatusPollingIntervalSec = 2
@@ -233,7 +233,7 @@
 
 [TxDataPool]
     Size = 75000
-    Type = "FIFOSharded"
+    Type = "TxCache"
     Shards = 16
 
 [UnsignedTransactionDataPool]
