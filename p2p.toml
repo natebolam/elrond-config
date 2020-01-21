@@ -18,7 +18,7 @@
     Seed = ""
 
     # The targeted number of peer connections
-    TargetPeerCount = 100
+    TargetPeerCount = 400
 
 # P2P peer discovery section
 
@@ -47,7 +47,7 @@
     #
     #If the initial peers list is left empty, the node will not try to connect to other peers during initial bootstrap
     #phase but will accept connections and will do the network discovery if another peer connects to it
-    InitialPeerList = ["/ip4/18.189.140.150/tcp/10000/p2p/16Uiu2HAkzjmsRhwiQv5uNdTKfzJiioSNrCPhXtcZs4bKvwsQs46x"]
+    InitialPeerList = ["/ip4/18.189.140.150/tcp/10000/p2p/16Uiu2HAmFyrvEzNCcLNAbiLZ5E6mFU32P8wrHPxiimVabY6Lmqmy"]
 
     #kademlia's routing table bucket size
     BucketSize = 100
