@@ -1,13 +1,13 @@
 {
-   "startTime": 1583251200,
+   "startTime": 1583254800,
    "roundDuration": 6000,
    "consensusGroupSize": 63,
-   "minNodesPerShard": 85,
-   "metaChainConsensusGroupSize": 85,
-   "metaChainMinNodes": 85,
+   "minNodesPerShard": 95,
+   "metaChainConsensusGroupSize": 95,
+   "metaChainMinNodes": 95,
    "hysteresis": 0.0,
    "adaptivity": false,
-   "chainID": "BoNwards-w26",
+   "chainID": "BoNwards-w27",
    "initialNodes": [
       {
          "pubkey": "8f24961eae0dc9e425020b4ca71415db15a582fa50b85abb604cf7f2b7c6db81018be4320b99a12c98763933242316b9c0247977858f64143abf85de919441eb5a7d297bd742897a8861c34e9db58787b3affaf5b9358c66a0adeacc6986356e5369fa4b3b66f418ba4312df1bcdf00fd8e041988781c62941cd8825581df979",
