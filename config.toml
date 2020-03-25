@@ -245,7 +245,7 @@
 
 [Antiflood]
     Enabled = true
-    NumConcurrentResolverJobs = 10
+    NumConcurrentResolverJobs = 40
     PeerMaxMessagesPerSecond = 75
     PeerMaxTotalSizePerSecond = 2097152
     MaxMessagesPerSecond = 400
