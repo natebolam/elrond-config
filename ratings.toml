@@ -5,9 +5,8 @@
 
 # ProposerIncreaseRatingStep = 1/2 * (maxRating - startRating)/(nrTimesProposerPerHour * hoursToGetToMaxRating)
 # ValidatorIncreaseRatingStep = 1/2 * (maxRating - startRating)/(nrTimeValidatorPerHour * hoursToGetToMaxRating)
-# ProposerDecreaseRatingStep = -4 * ProposerIncreaseRatingStep
-# ValidatorDecreaseRatingStep = -4 * ValidatorIncreaseRatingStep
-
+# ProposerDecreaseRatingStep = -2 * ProposerIncreaseRatingStep
+# ValidatorDecreaseRatingStep = -2 * ValidatorIncreaseRatingStep
 
 [General]
     StartRating = 500000
@@ -29,15 +28,15 @@
     ]
 
 [ShardChain.RatingSteps]
-    ProposerIncreaseRatingStep = 241
-    ProposerDecreaseRatingStep = -965
-    ValidatorIncreaseRatingStep = 6
-    ValidatorDecreaseRatingStep = -24
+    ProposerIncreaseRatingStep = 365
+    ProposerDecreaseRatingStep = -1460
+    ValidatorIncreaseRatingStep = 7
+    ValidatorDecreaseRatingStep = -28
     ConsecutiveMissedBlocksPenalty = 1.10
 
 [MetaChain.RatingSteps]
-    ProposerIncreaseRatingStep = 241
-    ProposerDecreaseRatingStep = -965
-    ValidatorIncreaseRatingStep = 5
-    ValidatorDecreaseRatingStep = -20
+    ProposerIncreaseRatingStep = 365
+    ProposerDecreaseRatingStep = -1460
+    ValidatorIncreaseRatingStep = 6
+    ValidatorDecreaseRatingStep = -24
     ConsecutiveMissedBlocksPenalty = 1.10
