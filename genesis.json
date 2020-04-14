@@ -1,15 +1,11 @@
 {
   "initialBalances": [
     {
-      "pubkey": "e6b4ca15b17c53d413a33f44befc6e25f448017fd122c76bd9f1b531adc35f50",
+      "pubkey": "erd1932eft30w753xyvme8d49qejgkjc09n5e49w4mwdjtm0neld797su0dlxp",
       "balance": "1000000000000000000000000000000000000"
     },
     {
-      "pubkey": "46496bd04532c27cbf31df512a64c72c002bc7c014fd77f608922e2e2e6cb91b",
-      "balance": "1000000000000000000000000000000000000"
-    },
-    {
-      "pubkey": "7f2b21d42b5764e3e27433e7adaaaa9262ea374ba6e15d9d0d8445e8137cc829",
+      "pubkey": "erd1fk97a8yez9u68ye504hvffjjayyyzcaydjn23xckr40cfuet4p9q6u4cqu",
       "balance": "1000000000000000000000000000000000000"
     }
   ]
