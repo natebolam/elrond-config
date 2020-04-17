@@ -57,7 +57,7 @@
         FilePath = "BlockHeaders"
         Type = "LvlDBSerial"
         BatchDelaySeconds = 2
-        MaxBatchSize = 100
+        MaxBatchSize = 1
         MaxOpenFiles = 10
 
 [BootstrapStorage]
@@ -79,7 +79,7 @@
         FilePath = "MetaBlock"
         Type = "LvlDBSerial"
         BatchDelaySeconds = 2
-        MaxBatchSize = 100
+        MaxBatchSize = 1
         MaxOpenFiles = 10
 
 [TxStorage]
@@ -145,7 +145,7 @@
         FilePath = "ShardHdrHashNonce"
         Type = "LvlDBSerial"
         BatchDelaySeconds = 2
-        MaxBatchSize = 100
+        MaxBatchSize = 1
         MaxOpenFiles = 10
 
 [MetaHdrNonceHashStorage]
@@ -156,7 +156,7 @@
         FilePath = "MetaHdrHashNonce"
         Type = "LvlDBSerial"
         BatchDelaySeconds = 2
-        MaxBatchSize = 100
+        MaxBatchSize = 1
         MaxOpenFiles = 10
 
 [AccountsTrieStorage]
@@ -259,11 +259,16 @@
 
 [Antiflood]
     Enabled = true
-    NumConcurrentResolverJobs = 40
-    PeerMaxMessagesPerSecond = 75
-    PeerMaxTotalSizePerSecond = 2097152
-    MaxMessagesPerSecond = 400
-    MaxTotalSizePerSecond = 4194304
+    NumConcurrentResolverJobs = 50
+    [Antiflood.NetworkMaxInput]
+        MessagesPerSecond = 400
+        TotalSizePerSecond = 4194304
+    [Antiflood.PeerMaxInput]
+        MessagesPerSecond = 75
+        TotalSizePerSecond = 2097152
+    [Antiflood.PeerMaxOutput]
+        MessagesPerSecond = 75
+        TotalSizePerSecond = 2097152
     [Antiflood.Cache]
         Size = 5000
         Type = "LRU"
