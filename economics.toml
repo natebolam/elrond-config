@@ -21,10 +21,9 @@
     UnBondPeriod = "1000"
     MinStepValue = "10000000000000000000000"
     TotalSupply = "20000000000000000000000000000" #20BIL ERD
-    NumNodes = 1000
     AuctionEnableNonce = "100000000000"
-    StakeEnableNonce = "1000"
+    StakeEnableNonce = "100"
     NumRoundsWithoutBleed = "100"
     MaximumPercentageToBleed = "0.5"
     BleedPercentagePerRound = "0.00001"
-    UnJailValue = "1000"
+    UnJailValue = "500000000000000000000"

@@ -233,6 +233,11 @@
     Type = "FIFOSharded"
     Shards = 10
 
+[WhiteListerVerifiedTxs]
+    Size = 50000
+    Type = "FIFOSharded"
+    Shards = 50
+
 [UnsignedTransactionDataPool]
     Size = 75000
     Type = "LRU"
@@ -294,11 +299,11 @@
     [Antiflood.TxAccumulator]
         # MaxAllowedTimeInMilliseconds is used as a time frame in which the node gathers transactions.
         # After this period, collected transactions will be sent on the p2p topics
-        MaxAllowedTimeInMilliseconds = 1000
+        MaxAllowedTimeInMilliseconds = 250
         # MaxDeviationTimeInMilliseconds represents the time in miliseconds that will cause the effectual time frame be
         # less than the specified max value. This is used to create desynchronizations between senders as to not
         # clutter the network exactly in the same moment
-        MaxDeviationTimeInMilliseconds = 100
+        MaxDeviationTimeInMilliseconds = 25
 
 [Logger]
     Path = "logs"
@@ -358,6 +363,8 @@
    Enabled = true
    MinTimeToWaitBetweenBroadcastsInSec = 50
    MaxTimeToWaitBetweenBroadcastsInSec = 70
+   HbmiRefreshIntervalInSec             = 60
+   HideInactiveValidatorIntervalInSec   = 600
    DurationInSecToConsiderUnresponsive = 300
    [Heartbeat.HeartbeatStorage]
        [Heartbeat.HeartbeatStorage.Cache]
@@ -402,3 +409,13 @@
     EnableTrigger = false
     EnableTriggerFromP2P = false
     PublicKeyToListenFrom = "b5ea539180627040b2703cabde8ebece0ded59a0c9d2d4a8a73a299fb7bc11d36ac3d1a620501c230059cffa983a7419d192a50ca55ed8aa07254658dda27aba1e54f50fd7cfbb9e66ce1715d72f9c1b0b05272388f9825742161a211debff15"
+
+[Debug]
+    [Debug.InterceptorResolver]
+        Enabled = false
+        CacheSize = 10000
+        EnablePrint	= false
+        IntervalAutoPrintInSeconds = 20
+        NumRequestsThreshold = 9
+        NumResolveFailureThreshold = 3
+        DebugLineExpiration = 10 #Will remove the debug line after a `DebugLineExpiration` number of prints
