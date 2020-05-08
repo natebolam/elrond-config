@@ -29,4 +29,4 @@
     MaximumPercentageToBleed = "0.5"
     BleedPercentagePerRound = "0.00001"
     UnJailValue = "2500000000000000000000" #0.1% of genesis node price
-    ActivateBLSPubKeyMessageVerification = false #TODO set to true before mainnet
+    ActivateBLSPubKeyMessageVerification = false
