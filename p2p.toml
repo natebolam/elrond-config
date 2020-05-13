@@ -47,7 +47,7 @@
     #
     #If the initial peers list is left empty, the node will not try to connect to other peers during initial bootstrap
     #phase but will accept connections and will do the network discovery if another peer connects to it
-    InitialPeerList = ["/ip4/157.245.119.254/tcp/10000/p2p/16Uiu2HAmUKp21DD9q8xYLGKQfMnNWFAPS9pyyicK8mF97TRhDGQF"]
+    InitialPeerList = ["/dns4/gateway.battleofnodes.com/tcp/10000/p2p/16Uiu2HAmFKvSukM3DAHkLj2k9g5zn3ZSqdPSAwSxBPsKgiVSC8DF"]
 
     #kademlia's routing table bucket size
     BucketSize = 100
