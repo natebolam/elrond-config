@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "owner": "erd1d38r2x2kkq00gcg949wc4v8lryh33penffe8kuj03n3asmwjgw9qvl6rf6",
+    "filename": "./config/genesisContracts/delegation.wasm",
+    "vm-type": "0500",
+    "init-parameters": "0BB8@%auction_sc_address%@0A61D0",
+    "type": "delegation",
+    "version": "0.2.*"
+  }
+]

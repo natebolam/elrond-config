@@ -60,10 +60,10 @@
 
 [Sharding]
     # The targeted number of peer connections
-    TargetPeerCount = 24
+    TargetPeerCount = 30
     # Number of priority bits used
     PrioBits = 4
-    MaxIntraShardValidators = 12
+    MaxIntraShardValidators = 16
     MaxCrossShardValidators = 8
     MaxIntraShardObservers = 2
     MaxCrossShardObservers = 1

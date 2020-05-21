@@ -220,9 +220,7 @@
 
 [TxDataPool]
     Size = 900000
-    SizePerSender = 10000
     SizeInBytes = 524288000
-    SizeInBytesPerSender = 6144000
     Type = "TxCache"
     Shards = 16
 
@@ -353,7 +351,7 @@
     ShuffledOutRestartThreshold = 0.25
 
     # ShuffleBetweenShards enables the shuffling of validators between shards at the end of epoch
-    ShuffleBetweenShards = false
+    ShuffleBetweenShards = true
     MinNumConnectedPeersToStart       = 6
     MinNumOfPeersToConsiderBlockValid = 6
 
@@ -372,6 +370,7 @@
    HeartbeatRefreshIntervalInSec        = 60
    HideInactiveValidatorIntervalInSec   = 600
    DurationToConsiderUnresponsiveInSec  = 300
+   PeerTypeRefreshIntervalInSec         = 60
    [Heartbeat.HeartbeatStorage]
        [Heartbeat.HeartbeatStorage.Cache]
            Size = 1000
