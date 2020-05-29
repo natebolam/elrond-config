@@ -292,8 +292,8 @@
             PeerBanDurationInSeconds = 900
 
     [Antiflood.PeerMaxOutput]
-        MessagesPerSecond = 75
-        TotalSizePerSecond = 2097152
+        MessagesPerInterval  = 75
+        TotalSizePerInterval = 2097152
     [Antiflood.Cache]
         Size = 5000
         Type = "LRU"
