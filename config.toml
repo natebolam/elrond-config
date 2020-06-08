@@ -324,7 +324,7 @@
         Type = "LRU"
     [Antiflood.Topic]
         DefaultMaxMessagesPerSec = 10000
-        MaxMessages = [{ Topic = "heartbeat", NumMessagesPerSec = 20 },
+        MaxMessages = [{ Topic = "heartbeat", NumMessagesPerSec = 40 },
                        { Topic = "shardBlocks*", NumMessagesPerSec = 20 },
                        { Topic = "metachainBlocks", NumMessagesPerSec = 20 }]
     [Antiflood.WebServer]
