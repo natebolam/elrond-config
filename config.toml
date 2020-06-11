@@ -289,64 +289,64 @@
 
 [Antiflood]
     Enabled = true
-    NumConcurrentResolverJobs = 100000
+    NumConcurrentResolverJobs = 50
     [Antiflood.FastReacting]
         IntervalInSeconds = 1
-        ReservedPercent   = 0
+        ReservedPercent   = 20
         [Antiflood.FastReacting.PeerMaxInput]
-            BaseMessagesPerInterval  = 1000000
-            TotalSizePerInterval = 2516582000
+            BaseMessagesPerInterval  = 140
+            TotalSizePerInterval = 4194304 #4MB/s
             [Antiflood.FastReacting.PeerMaxInput.IncreaseFactor]
                 Threshold = 10 #if consensus size will exceed this value, then
                 Factor = 1     #increase the base value with [factor*consensus size]
         [Antiflood.FastReacting.BlackList]
-            ThresholdNumMessagesPerInterval = 1000000
-            ThresholdSizePerInterval = 2516582000
-            NumFloodingRounds = 100000000
-            PeerBanDurationInSeconds = 1
+            ThresholdNumMessagesPerInterval = 1000
+            ThresholdSizePerInterval = 8388608 #8MB/s
+            NumFloodingRounds = 10
+            PeerBanDurationInSeconds = 300
 
     [Antiflood.SlowReacting]
         IntervalInSeconds = 30
-        ReservedPercent   = 0
+        ReservedPercent   = 20.0
         [Antiflood.SlowReacting.PeerMaxInput]
-            BaseMessagesPerInterval = 1000000
-            TotalSizePerInterval = 2516582000
+            BaseMessagesPerInterval = 5000
+            TotalSizePerInterval = 18874368 # 18MB/interval
             [Antiflood.SlowReacting.PeerMaxInput.IncreaseFactor]
                 Threshold = 10 #if consensus size will exceed this value, then
                 Factor = 0     #increase the base value with [factor*consensus size]
         [Antiflood.SlowReacting.BlackList]
-            ThresholdNumMessagesPerInterval = 1000000
-            ThresholdSizePerInterval = 2516582000
-            NumFloodingRounds = 100000000
-            PeerBanDurationInSeconds = 1
+            ThresholdNumMessagesPerInterval = 10000
+            ThresholdSizePerInterval = 37748736 # 36MB/interval
+            NumFloodingRounds = 2
+            PeerBanDurationInSeconds = 3600
 
     [Antiflood.OutOfSpecs]
         IntervalInSeconds = 1
         ReservedPercent   = 0.0
         [Antiflood.OutOfSpecs.PeerMaxInput]
-            BaseMessagesPerInterval = 1000000
-            TotalSizePerInterval = 2516582000
+            BaseMessagesPerInterval = 2000
+            TotalSizePerInterval = 10485760 # 10MB/interval
             [Antiflood.OutOfSpecs.PeerMaxInput.IncreaseFactor]
                 Threshold = 0 #if consensus size will exceed this value, then
                 Factor = 0     #increase the base value with [factor*consensus size]
         [Antiflood.OutOfSpecs.BlackList]
-            ThresholdNumMessagesPerInterval = 1000000
-            ThresholdSizePerInterval = 2516582000
-            NumFloodingRounds = 100000000
-            PeerBanDurationInSeconds = 1
+            ThresholdNumMessagesPerInterval = 3600
+            ThresholdSizePerInterval = 12582912 # 12MB/interval
+            NumFloodingRounds = 2
+            PeerBanDurationInSeconds = 3600
 
     [Antiflood.PeerMaxOutput]
-        BaseMessagesPerInterval  = 1000000
-        TotalSizePerInterval     = 2516582000
+        BaseMessagesPerInterval  = 75
+        TotalSizePerInterval     = 2097152 #2MB/s
 
     [Antiflood.Cache]
-        Capacity = 5000
+        Capacity = 7000
         Type = "LRU"
     [Antiflood.Topic]
         DefaultMaxMessagesPerSec = 15000
-        MaxMessages = [{ Topic = "heartbeat", NumMessagesPerSec = 1000000 },
-                       { Topic = "shardBlocks*", NumMessagesPerSec = 1000000 },
-                       { Topic = "metachainBlocks", NumMessagesPerSec = 1000000 }]
+        MaxMessages = [{ Topic = "heartbeat", NumMessagesPerSec = 50 },
+                       { Topic = "shardBlocks*", NumMessagesPerSec = 30 },
+                       { Topic = "metachainBlocks", NumMessagesPerSec = 30 }]
     [Antiflood.WebServer]
         # SimultaneousRequests represents the number of concurrent requests accepted by the web server
         # this is a global throttler that acts on all http connections regardless of the originating source
