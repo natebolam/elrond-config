@@ -31,7 +31,7 @@
     [MiniBlocksStorage.Cache]
         Capacity = 300
         Type = "SizeLRU"
-        SizeInBytes = 314572800 #300MB
+        SizeInBytes = 104857600 #100MB
     [MiniBlocksStorage.DB]
         FilePath = "MiniBlocks"
         Type = "LvlDBSerial"
@@ -43,7 +43,7 @@
     [PeerBlockBodyStorage.Cache]
         Capacity = 1000
         Type = "SizeLRU"
-        SizeInBytes = 314572800 #300MB
+        SizeInBytes = 104857600 #100MB
     [PeerBlockBodyStorage.DB]
         FilePath = "PeerBlocks"
         Type = "LvlDBSerial"
@@ -90,7 +90,7 @@
     [TxStorage.Cache]
         Capacity = 75000
         Type = "SizeLRU"
-        SizeInBytes = 314572800 #300MB
+        SizeInBytes = 209715200 #200MB
     [TxStorage.DB]
         FilePath = "Transactions"
         Type = "LvlDBSerial"
@@ -114,7 +114,7 @@
     [UnsignedTransactionStorage.Cache]
         Capacity = 75000
         Type = "SizeLRU"
-        SizeInBytes = 314572800 #300MB
+        SizeInBytes = 209715200 #200MB
     [UnsignedTransactionStorage.DB]
         FilePath = "UnsignedTransactions"
         Type = "LvlDBSerial"
@@ -309,7 +309,7 @@
         IntervalInSeconds = 30
         ReservedPercent   = 20.0
         [Antiflood.SlowReacting.PeerMaxInput]
-            BaseMessagesPerInterval = 5000
+            BaseMessagesPerInterval = 6000
             TotalSizePerInterval = 18874368 # 18MB/interval
             [Antiflood.SlowReacting.PeerMaxInput.IncreaseFactor]
                 Threshold = 10 #if consensus size will exceed this value, then
@@ -404,8 +404,8 @@
 
 # TODO: change this config to real numbers before merging to development
 [EpochStartConfig]
-    MinRoundsBetweenEpochs = 14400
-    RoundsPerEpoch         = 14400
+    MinRoundsBetweenEpochs = 600
+    RoundsPerEpoch         = 600
     # ShuffledOutRestartThreshold represents the maximum duration of an epoch (in percentage) after a node which
     # has been shuffled out has to restart its process in order to start in a new shard
     ShuffledOutRestartThreshold = 0.25
